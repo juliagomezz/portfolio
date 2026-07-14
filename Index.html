@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics="">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;family=Unbounded:wght@400;700;900&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#161513;font-family:'Space Grotesk',system-ui,sans-serif;color:#EDEAE2}
+a{color:#D5E33B;text-decoration:none}a:hover{color:#EDEAE2}
+::selection{background:#D5E33B;color:#161513}
+::-webkit-scrollbar{width:9px}::-webkit-scrollbar-track{background:#161513}::-webkit-scrollbar-thumb{background:#D5E33B}
+@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+</style>
+</helmet>
+
+<!-- ===================== NAV ===================== -->
+<div style="position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:18px 32px;background:rgba(22,21,19,.82);backdrop-filter:blur(10px);border-bottom:1px solid rgba(237,234,226,.12)">
+  <a href="#inicio" style="font-family:'Unbounded',sans-serif;font-weight:900;font-size:17px;color:#EDEAE2;letter-spacing:.02em">JGF<span style="color:#D5E33B">®</span></a>
+  <div style="display:flex;gap:26px;font-size:12px;letter-spacing:.16em;text-transform:uppercase">
+    <a href="#trabajos" style="color:rgba(237,234,226,.75)" style-hover="color:#D5E33B">Trabajos</a>
+    <a href="#sobre-mi" style="color:rgba(237,234,226,.75)" style-hover="color:#D5E33B">Sobre mí</a>
+    <a href="#contacto" style="color:#D5E33B">Hablemos ↗</a>
+  </div>
+</div>
+
+<!-- ===================== HERO ===================== -->
+<section id="inicio" data-screen-label="Hero" style="position:relative;min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:120px 32px 60px;overflow:hidden;box-sizing:border-box">
+  <div style="position:relative;max-width:1200px;margin:0 auto;width:100%">
+    <div style="font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:rgba(237,234,226,.6);animation:fadeUp .7s ease both">Brand &amp; Visual Designer — Rosario, AR</div>
+    <h1 style="font-family:'Unbounded',sans-serif;font-weight:900;font-size:clamp(56px,10vw,150px);line-height:.95;margin:22px 0 0;text-transform:uppercase;color:#EDEAE2;animation:fadeUp .7s .1s ease both">Julia<br><span style="color:transparent;-webkit-text-stroke:2px #D5E33B">Gómez</span><br>Forte</h1>
+    <div style="display:flex;gap:24px;align-items:flex-end;margin-top:34px;flex-wrap:wrap;animation:fadeUp .7s .2s ease both">
+      <p style="margin:0;max-width:420px;font-size:16px;line-height:1.6;color:rgba(237,234,226,.72)">Diseño marcas con carácter. Última etapa de la Licenciatura en Diseño — identidad, packaging y comunicación visual en redes.</p>
+      <a href="#trabajos" style="flex:none;display:inline-flex;align-items:center;gap:10px;background:#D5E33B;color:#161513;font-family:'Unbounded',sans-serif;font-weight:700;font-size:13px;text-transform:uppercase;padding:14px 24px;box-shadow:5px 5px 0 rgba(237,234,226,.25)" style-hover="box-shadow:2px 2px 0 rgba(237,234,226,.25);transform:translate(3px,3px);color:#161513">Ver trabajos ↓</a>
+    </div>
+    <div style="position:absolute;top:-10px;right:0;width:min(240px,26vw);aspect-ratio:3/4;transform:rotate(-4deg);border:2px solid #D5E33B;box-shadow:10px 10px 0 #D5E33B;overflow:hidden">
+      <img src="uploads/foto-1784047123092.png" alt="Julia Gómez Forte" style="width:100%;height:100%;object-fit:cover;display:block;filter:grayscale(1) contrast(1.08)">
+    </div>
+    <div style="position:absolute;right:min(215px,23vw);top:270px;width:104px;height:104px;animation:spin 14s linear infinite">
+      <div style="width:100%;height:100%;border:1.5px solid #D5E33B;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#D5E33B;font-size:11px;font-family:'Space Grotesk',monospace;text-align:center;line-height:1.3;letter-spacing:.08em"><br>LIC. EN<br>DISEÑO<br><br></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== MARQUEE ===================== -->
+<div style="overflow:hidden;background:#D5E33B;border-top:2px solid #161513;border-bottom:2px solid #161513">
+  <div style="display:flex;width:max-content;white-space:nowrap;animation:marquee 16s linear infinite;font-family:'Unbounded',sans-serif;font-weight:700;font-size:18px;color:#161513;padding:12px 0;text-transform:uppercase">
+    <span style="flex:none;padding-right:36px">Branding ✳ Identidad ✳ Packaging ✳ Editorial ✳ Redes ✳ Estrategia ✳ Branding ✳ Identidad ✳ Packaging ✳ Editorial ✳ Redes ✳ Estrategia ✳ Branding ✳ Identidad ✳ Packaging ✳ Editorial ✳ Redes ✳ Estrategia ✳</span>
+    <span style="flex:none;padding-right:36px">Branding ✳ Identidad ✳ Packaging ✳ Editorial ✳ Redes ✳ Estrategia ✳ Branding ✳ Identidad ✳ Packaging ✳ Editorial ✳ Redes ✳ Estrategia ✳ Branding ✳ Identidad ✳ Packaging ✳ Editorial ✳ Redes ✳ Estrategia ✳</span>
+  </div>
+</div>
+
+<!-- ===================== TRABAJOS ===================== -->
+<section id="trabajos" data-screen-label="Trabajos" style="padding:90px 32px;max-width:1200px;margin:0 auto;box-sizing:border-box">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:12px;margin-bottom:50px">
+    <h2 style="font-family:'Unbounded',sans-serif;font-weight:900;font-size:clamp(34px,5vw,60px);margin:0;text-transform:uppercase">Trabajos<span style="color:#D5E33B">.</span></h2>
+    <span style="font-family:'Instrument Serif',serif;font-style:italic;font-size:20px;color:rgba(237,234,226,.6)">cinco casos, 2024 — 2026</span>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:34px">
+
+    <div onClick="{{ openCosmico }}" style="cursor:pointer;background:#EDEAE2;transform:rotate(-1.3deg);padding:12px 12px 14px;transition:transform .25s ease, box-shadow .25s ease" style-hover="transform:rotate(0deg) translateY(-6px);box-shadow:8px 8px 0 #D5E33B">
+      <div style="overflow:hidden;height:240px"><img src="uploads/cosmico-2.jpg" alt="Cósmico Mundial 2026" style="width:100%;height:100%;object-fit:cover;display:block;filter:{{ filtroFotos }}"></div>
+      <div style="display:flex;justify-content:space-between;align-items:baseline;margin-top:12px;gap:8px">
+        <span style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:18px;color:#161513;text-transform:uppercase">Cósmico</span>
+        <span style="font-size:10px;color:#161513;font-family:monospace;letter-spacing:.1em">REDES</span>
+      </div>
+      <div style="font-family:'Instrument Serif',serif;font-style:italic;font-size:14px;color:#7a7668;margin-top:2px">Edición especial Mundial 2026 → ver caso</div>
+    </div>
+
+    <div onClick="{{ openBellota }}" style="cursor:pointer;background:#EDEAE2;transform:rotate(1.4deg);padding:12px 12px 14px;margin-top:26px;transition:transform .25s ease, box-shadow .25s ease" style-hover="transform:rotate(0deg) translateY(-6px);box-shadow:8px 8px 0 #D5E33B">
+      <div style="overflow:hidden;height:240px"><img src="uploads/Captura de pantalla 2026-06-19 a la(s) 17.34.47.png" alt="Bellota Bakery" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block;filter:{{ filtroFotos }}"></div>
+      <div style="display:flex;justify-content:space-between;align-items:baseline;margin-top:12px;gap:8px">
+        <span style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:18px;color:#161513;text-transform:uppercase">Bellota</span>
+        <span style="font-size:10px;color:#161513;font-family:monospace;letter-spacing:.1em">BRANDING</span>
+      </div>
+      <div style="font-family:'Instrument Serif',serif;font-style:italic;font-size:14px;color:#7a7668;margin-top:2px">De redes a mostrador → ver caso</div>
+    </div>
+
+    <div onClick="{{ openRonda }}" style="cursor:pointer;background:#EDEAE2;transform:rotate(1.1deg);padding:12px 12px 14px;transition:transform .25s ease, box-shadow .25s ease" style-hover="transform:rotate(0deg) translateY(-6px);box-shadow:8px 8px 0 #D5E33B">
+      <div style="overflow:hidden;height:240px"><img src="uploads/ronda.png" alt="Ronda" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block;filter:{{ filtroFotos }}"></div>
+      <div style="display:flex;justify-content:space-between;align-items:baseline;margin-top:12px;gap:8px">
+        <span style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:18px;color:#161513;text-transform:uppercase">Ronda</span>
+        <span style="font-size:10px;color:#161513;font-family:monospace;letter-spacing:.1em">IDENTIDAD</span>
+      </div>
+      <div style="font-family:'Instrument Serif',serif;font-style:italic;font-size:14px;color:#7a7668;margin-top:2px">La sobremesa como ritual → ver caso</div>
+    </div>
+
+    <div onClick="{{ openMurde }}" style="cursor:pointer;background:#EDEAE2;transform:rotate(-1.6deg);padding:12px 12px 14px;margin-top:26px;transition:transform .25s ease, box-shadow .25s ease" style-hover="transform:rotate(0deg) translateY(-6px);box-shadow:8px 8px 0 #D5E33B">
+      <div style="overflow:hidden;height:240px"><img src="uploads/murde.jpg" alt="Murde" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block;filter:{{ filtroFotos }}"></div>
+      <div style="display:flex;justify-content:space-between;align-items:baseline;margin-top:12px;gap:8px">
+        <span style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:18px;color:#161513;text-transform:uppercase">Murde</span>
+        <span style="font-size:10px;color:#161513;font-family:monospace;letter-spacing:.1em">ESTRATEGIA</span>
+      </div>
+      <div style="font-family:'Instrument Serif',serif;font-style:italic;font-size:14px;color:#7a7668;margin-top:2px">Mobiliario urbano y pausa → ver caso</div>
+    </div>
+
+    <div onClick="{{ openCrudo }}" style="cursor:pointer;background:#EDEAE2;transform:rotate(1deg);padding:12px 12px 14px;transition:transform .25s ease, box-shadow .25s ease" style-hover="transform:rotate(0deg) translateY(-6px);box-shadow:8px 8px 0 #D5E33B">
+      <div style="overflow:hidden;height:240px"><img src="uploads/Manual de Marca_page-0001.jpg" alt="Crudo Estudio" style="width:100%;height:100%;object-fit:cover;display:block;filter:{{ filtroFotos }}"></div>
+      <div style="display:flex;justify-content:space-between;align-items:baseline;margin-top:12px;gap:8px">
+        <span style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:18px;color:#161513;text-transform:uppercase">Crudo</span>
+        <span style="font-size:10px;color:#161513;font-family:monospace;letter-spacing:.1em">BRANDING</span>
+      </div>
+      <div style="font-family:'Instrument Serif',serif;font-style:italic;font-size:14px;color:#7a7668;margin-top:2px">De lo crudo a la experiencia → ver caso</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===================== SOBRE MI ===================== -->
+<section id="sobre-mi" data-screen-label="Sobre mí" style="border-top:2px solid #D5E33B;background:#1c1b18;padding:90px 32px;box-sizing:border-box">
+  <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:minmax(220px,320px) 1fr;gap:56px;align-items:start">
+    <div style="position:relative">
+      <div style="transform:rotate(3deg);border:2px solid #D5E33B;box-shadow:-8px 8px 0 #D5E33B;overflow:hidden;aspect-ratio:3/4"><img src="uploads/foto-1784047123092.png" alt="Julia" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+      <div style="position:absolute;bottom:-16px;right:-10px;background:#D5E33B;color:#161513;font-family:'Unbounded',sans-serif;font-weight:700;font-size:11px;text-transform:uppercase;padding:8px 14px;transform:rotate(-3deg)">Rosario, AR ✳</div>
+    </div>
+    <div>
+      <h2 style="font-family:'Unbounded',sans-serif;font-weight:900;font-size:clamp(30px,4.4vw,52px);margin:0 0 22px;text-transform:uppercase">Sobre mí<span style="color:#D5E33B">.</span></h2>
+      <p style="margin:0 0 16px;font-size:16px;line-height:1.7;color:rgba(237,234,226,.78);max-width:640px">Soy Julia, diseñadora grafica. Estoy en la última etapa de la <strong style="color: rgb(237, 234, 226);">Licenciatura en Diseño (Universidad Católica Argentina)</strong>, con una mirada estratégica y editorial: transformo ideas complejas en identidades consistentes y memorables.</p>
+      <p style="margin:0 0 34px;font-size:16px;line-height:1.7;color:rgba(237,234,226,.78);max-width:640px">Trabajo identidad visual, packaging, estrategia de marca y contenido para redes sociales.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:10px">
+        <span style="border:1.5px solid #D5E33B;color:#D5E33B;font-size:12px;letter-spacing:.1em;text-transform:uppercase;padding:8px 14px">Illustrator</span>
+        <span style="border:1.5px solid #D5E33B;color:#D5E33B;font-size:12px;letter-spacing:.1em;text-transform:uppercase;padding:8px 14px">Photoshop</span>
+        <span style="border:1.5px solid #D5E33B;color:#D5E33B;font-size:12px;letter-spacing:.1em;text-transform:uppercase;padding:8px 14px">After Effects</span>
+        <span style="border:1.5px solid #D5E33B;color:#D5E33B;font-size:12px;letter-spacing:.1em;text-transform:uppercase;padding:8px 14px">Premiere</span>
+        <span style="border:1.5px solid #D5E33B;color:#D5E33B;font-size:12px;letter-spacing:.1em;text-transform:uppercase;padding:8px 14px">CapCut</span>
+        <span style="border:1.5px solid #D5E33B;color:#D5E33B;font-size:12px;letter-spacing:.1em;text-transform:uppercase;padding:8px 14px">Canva Pro</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACTO ===================== -->
+<section id="contacto" data-screen-label="Contacto" style="padding:110px 32px 40px;box-sizing:border-box;border-top:2px solid #D5E33B">
+  <div style="max-width:1200px;margin:0 auto;text-align:center">
+    <div style="font-family:'Instrument Serif',serif;font-style:italic;font-size:22px;color:rgba(237,234,226,.65)">¿Tenés un proyecto?</div>
+    <a href="mailto:juligomezforte@gmail.com" style="display:block;font-family:'Unbounded',sans-serif;font-weight:900;font-size:clamp(26px,5.4vw,64px);text-transform:uppercase;color:#EDEAE2;margin:18px 0 26px;word-break:break-word" style-hover="color:#D5E33B">Hablemos ↗</a>
+    <div style="display:flex;justify-content:center;gap:28px;flex-wrap:wrap;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:rgba(237,234,226,.7)">
+      <a href="mailto:juligomezforte@gmail.com" style="color:#D5E33B">juligomezforte@gmail.com</a>
+      <a href="https://instagram.com/juligomezforte" style="color:#D5E33B">@juligomezforte</a>
+      <span>Rosario, Argentina</span>
+    </div>
+  </div>
+  <div style="overflow:hidden;background:#D5E33B;margin:70px -32px -40px">
+    <div style="display:flex;width:max-content;white-space:nowrap;animation:marquee 13s linear infinite;font-family:'Unbounded',sans-serif;font-weight:700;font-size:15px;color:#161513;padding:10px 0;text-transform:uppercase">
+      <span style="flex:none;padding-right:30px">Julia Gómez Forte ✳ Portfolio 2026 ✳ Brand &amp; Visual Design ✳ Julia Gómez Forte ✳ Portfolio 2026 ✳ Brand &amp; Visual Design ✳ Julia Gómez Forte ✳ Portfolio 2026 ✳ Brand &amp; Visual Design ✳</span>
+      <span style="flex:none;padding-right:30px">Julia Gómez Forte ✳ Portfolio 2026 ✳ Brand &amp; Visual Design ✳ Julia Gómez Forte ✳ Portfolio 2026 ✳ Brand &amp; Visual Design ✳ Julia Gómez Forte ✳ Portfolio 2026 ✳ Brand &amp; Visual Design ✳</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== MODAL CASO ===================== -->
+<sc-if value="{{ modalAbierto }}" hint-placeholder-val="{{ false }}">
+  <div data-screen-label="Modal caso" style="position:fixed;inset:0;z-index:100;background:rgba(22,21,19,.96);backdrop-filter:blur(6px);overflow-y:auto">
+    <div style="max-width:1000px;margin:0 auto;padding:80px 32px 80px;box-sizing:border-box">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:20px">
+        <div>
+          <div style="font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#D5E33B">{{ modalCategoria }}</div>
+          <h2 style="font-family:'Unbounded',sans-serif;font-weight:900;font-size:clamp(34px,6vw,64px);margin:10px 0 6px;text-transform:uppercase;color:#EDEAE2">{{ modalTitulo }}</h2>
+          <div style="font-family:'Instrument Serif',serif;font-style:italic;font-size:22px;color:rgba(237,234,226,.7)">{{ modalConcepto }}</div>
+        </div>
+        <button onClick="{{ cerrarModal }}" style="flex:none;background:#D5E33B;border:none;color:#161513;font-family:'Unbounded',sans-serif;font-weight:700;font-size:13px;text-transform:uppercase;padding:12px 18px;cursor:pointer" style-hover="background:#EDEAE2">Cerrar ✕</button>
+      </div>
+      <p style="font-size:16px;line-height:1.7;color:rgba(237,234,226,.8);margin:30px 0;max-width:720px">{{ modalDescripcion }}</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:40px">
+        <div style="border:1.5px solid rgba(237,234,226,.25);padding:18px">
+          <div style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#D5E33B;margin-bottom:8px">Rol</div>
+          <div style="font-size:14px;line-height:1.6;color:rgba(237,234,226,.85)">{{ modalRol }}</div>
+        </div>
+        <div style="border:1.5px solid rgba(237,234,226,.25);padding:18px">
+          <div style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#D5E33B;margin-bottom:8px">Piezas</div>
+          <div style="font-size:14px;line-height:1.6;color:rgba(237,234,226,.85)">{{ modalPiezas }}</div>
+        </div>
+      </div>
+      <div>{{ galeriaModal }}</div>
+      <sc-if value="{{ modalSinImagenes }}" hint-placeholder-val="{{ false }}">
+        <div style="border:1.5px dashed rgba(237,234,226,.4);padding:60px 20px;text-align:center;font-family:monospace;font-size:12px;letter-spacing:.12em;color:rgba(237,234,226,.6)">[ TODAVÍA NO HAY IMÁGENES DE ESTE CASO — SUBILAS Y LAS AGREGO ]</div>
+      </sc-if>
+    </div>
+  </div>
+</sc-if>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;fotosGrises&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Estilo&quot;,&quot;description&quot;:&quot;Las fotos de los proyectos en blanco y negro (se colorean al abrir el caso)&quot;}}">
+class Component extends DCLogic {
+  state = { abierto: null };
+
+  proyectos = {
+    cosmico: {
+      titulo: "Cósmico",
+      categoria: " Redes — 2026",
+      concepto: "Producción gráfica para carrusel de Instagram",
+      descripcion: "Piezas gráficas para un carrusel de Instagram de Yerba Mate Cósmico. La campaña y su concepto fueron provistos por el cliente; mi trabajo fue el diseño y la producción visual de todas las piezas en Photoshop, sobre la estética retro de la marca, para comunicar la edición especial del Mundial 2026.",
+      rol: "Diseño Gráfico y Producción en Photoshop",
+      piezas: "Placa de lanzamiento, instructivo ¿Cómo participar?, placa de premios, packaging de edición especial y recursos gráficos complementarios.",
+      imagenes: ["uploads/cosmico-1.jpg", "uploads/cosmico-2.jpg", "uploads/cosmico-3.jpg"]
+    },
+    bellota: {
+      titulo: "Bellota Bakery",
+      categoria: "Branding — 2025",
+      concepto: "Consistencia artesanal, de redes a mostrador",
+      descripcion: "Identidad visual y comunicación para un emprendimiento gastronómico. El trabajo incluye desarrollo de logo, versión horizontal, paleta de colores, sistema tipográfico, patrón gráfico, stickers, tarjeta de presentación, cartelería y contenido visual para redes sociales.",
+      rol: "Identidad Visual y Comunicación de Marca",
+      piezas: "Logo principal, logo horizontal, paleta de colores, tipografía, patrón gráfico, sticker de agradecimiento, tarjeta de presentación, cartelería y templates para redes.",
+      imagenes: ["uploads/Captura de pantalla 2026-06-19 a la(s) 17.34.47.png", "uploads/descarga (2).jpeg"]
+    },
+    ronda: {
+      titulo: "Ronda",
+      categoria: "Identidad — 2025",
+      concepto: "La sobremesa como ritual contemporáneo",
+      descripcion: "Propuesta de identidad visual para una barra de tapeo contemporánea. Una estética cálida, sofisticada y gastronómica, vinculada a la sobremesa como ritual: paleta marfil, terracota, vino, oliva y carbón, con una identidad elegante, sensorial y cercana.",
+      rol: "Branding e Identidad Visual",
+      piezas: "Logotipo, paleta cromática, sistema tipográfico, moodboard, elementos gráficos y aplicaciones de marca.",
+      imagenes: ["uploads/ronda.png", "uploads/ronda 3 imagenes juntas .png"]
+    },
+    murde: {
+      titulo: "Murde",
+      categoria: "Estrategia — 2025",
+      concepto: "Mobiliario urbano · Diseño · Bienestar · Pausa",
+      descripcion: "Marca de mobiliario urbano pensada desde el diseño, el bienestar y la pausa. El proyecto desarrolla identidad visual, valores de marca, segmentación de clientes, propuesta de valor y análisis competitivo, posicionando la marca entre lo funcional y lo premium con una estética sobria, cálida y atemporal.",
+      rol: "Identidad Estratégica, Análisis Competitivo y Posicionamiento",
+      piezas: "Valores de marca, segmento de clientes, público objetivo, canales y propuesta de valor.",
+      imagenes: ["uploads/murde.jpg"]
+    },
+    crudo: {
+      titulo: "Crudo Estudio",
+      categoria: "Branding — 2024",
+      concepto: "De lo crudo a la experiencia",
+      descripcion: "CRUDO es un estudio de diseño para experiencias gastronómicas. El concepto parte de transformar una idea inicial, todavía cruda, en una experiencia integral y coherente: identidad visual, concepto de marca, paleta cromática, sistema tipográfico, logo, tono visual y papelería.",
+      rol: "Identidad Visual, Concepto de Marca y Papelería Corporativa",
+      piezas: "Manual de identidad, concepto de marca, paleta cromática, sistema tipográfico, logotipo y variaciones, papelería.",
+      imagenes: ["uploads/Manual de Marca_page-0001.jpg", "uploads/Manual de Marca_page-0002.jpg", "uploads/Manual de Marca_page-0003.jpg", "uploads/Manual de Marca_page-0004.jpg", "uploads/Manual de Marca_page-0005.jpg", "uploads/Manual de Marca_page-0006.jpg"]
+    }
+  };
+
+  componentDidMount() {
+    this._esc = (e) => { if (e.key === "Escape") this.setState({ abierto: null }); };
+    window.addEventListener("keydown", this._esc);
+  }
+  componentWillUnmount() { window.removeEventListener("keydown", this._esc); }
+
+  abrir(id) {
+    this.setState({ abierto: id });
+    document.body.style.overflow = "hidden";
+  }
+  cerrar() {
+    this.setState({ abierto: null });
+    document.body.style.overflow = "";
+  }
+
+  renderVals() {
+    const p = this.state.abierto ? this.proyectos[this.state.abierto] : null;
+    const fotosGrises = this.props.fotosGrises ?? true;
+    return {
+      openCosmico: () => this.abrir("cosmico"),
+      openBellota: () => this.abrir("bellota"),
+      openRonda: () => this.abrir("ronda"),
+      openMurde: () => this.abrir("murde"),
+      openCrudo: () => this.abrir("crudo"),
+      cerrarModal: () => this.cerrar(),
+      filtroFotos: fotosGrises ? "grayscale(1) contrast(1.05)" : "none",
+      modalAbierto: !!p,
+      modalTitulo: p ? p.titulo : "",
+      modalCategoria: p ? p.categoria : "",
+      modalConcepto: p ? p.concepto : "",
+      modalDescripcion: p ? p.descripcion : "",
+      modalRol: p ? p.rol : "",
+      modalPiezas: p ? p.piezas : "",
+      galeriaModal: p ? p.imagenes.map((src, i) => React.createElement("img", { key: src, src: src, alt: p.titulo + " " + (i + 1), style: { width: "100%", display: "block", marginBottom: 24, border: "2px solid #EDEAE2", boxSizing: "border-box" } })) : null,
+      modalSinImagenes: p ? p.imagenes.length === 0 : false
+    };
+  }
+}
+</script>
+</body>
+</html>
